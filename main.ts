@@ -1,29 +1,6 @@
 makerbit.onIrButton(IrButton.Any, IrButtonAction.Released, function () {
     maqueen.motorStop(maqueen.Motors.All)
 })
-/**
- * if reflected - no line - light is on
- * 
- * if not reflected - line
- * 
- * sensors should not see the line
- * 
- *  - if left sees the line, then 
- * 
- *         move left by turning your right wheel faster than left wheel
- * 
- * - if right sees line then,
- * 
- *         move right by turning your left wheel faster than right wheel
- * 
- * - if both sees line, then
- * 
- *         keep going straight
- * 
- * - if no one sees line, then
- * 
- *         stop
- */
 makerbit.onIrButton(IrButton.Any, IrButtonAction.Pressed, function () {
     if (makerbit.irButton() == 120) {
         maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 100)
