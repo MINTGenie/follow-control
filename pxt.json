@@ -4,7 +4,8 @@
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "maqueen": "github:dfrobot/pxt-maqueen#v1.3.6"
+        "maqueen": "github:dfrobot/pxt-maqueen#v1.3.6",
+        "MakerBit-IR-Receiver": "github:1010technologies/pxt-makerbit-ir-receiver#v1.5.2"
     },
     "files": [
         "main.blocks",
